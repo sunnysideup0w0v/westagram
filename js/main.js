@@ -68,10 +68,29 @@ const makeList = (obj) => {
 const searchFriend = (obj, value) => {
   const friendIdList = Object.keys(obj);
   const lowerValue = value.toLowerCase();
-  const filteredList = friendIdList.filter((list) => {
+  const filteredLists = friendIdList.filter((list) => {
     return list.includes(lowerValue);
   });
-  filteredList.forEach();
+  friendListBox.innerHTML = "";
+  filteredLists.forEach((filteredlist) => {
+    console.log(obj[filteredlist]);
+    const filteredFriendId = filteredlist;
+    const filteredFriendObj = obj[filteredlist];
+    const li = friendListBox.appendChild(document.createElement("li"));
+    li.innerHTML = `
+    <li>
+      <div class="imgBox">
+        <img class="img100per" src=${filteredFriendObj["img_src"]} alt="" />
+      </div>
+      <div class="textBox">
+        <span class="id">${filteredFriendId}</span>
+        <span class="name">${filteredFriendObj["name"]}</span>
+      </div>
+    </li>`;
+    li.addEventListener("click", () => {
+      window.location.href = `${filteredFriendObj["href"]}`;
+    });
+  });
 };
 
 // makeFriendList
