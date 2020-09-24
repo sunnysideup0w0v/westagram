@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li class="list">hello</li>
+      <li class="list">hello</li>
+      <li class="list">hello</li>
+    </ul>
+    <input type="text" />
+    <script>
+      let queryList = document.querySelectorAll(".list"); // NodeList
+      let classList = document.getElementsByClassName("list"); // HTMLCollection
+
+      console.log(queryList);
+      console.log(classList);
+
+      console.log("queryList", queryList[0], "classList", classList[0]);
+
+      queryList.forEach((li) => {
+        li.className = "hi";
+        console.log("queryHi", li);
+      });
+      // setTimeout(() => {
+      //   queryList.forEach((li) => {
+      //     li.className = "hi";
+      //     console.log("queryHi", li);
+      //   });
+      // }, 5000);
+      // queryList.forEach((li) => {
+      //   li.className = "hi";
+      //   console.log("queryHi", li);
+      // });
+
+      // let classHi = document.getElementsByClassName("hi");
+      // for (let i = 0; i < classHi.length; i++) {
+      //   console.log("classHi", classHi[i]);
+      // }
+
+      // [...classHi].forEach((hi) => {
+      //   console.log(hi);
+      // });
+
+      // classList.forEach((li) => {
+      //   li.className = "no";
+      //   console.log(li);
+      // });
+    </script>
+  </body>
+</html>

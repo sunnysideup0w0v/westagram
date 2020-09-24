@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/common.css" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <script defer src="../js/main.js"></script>
+    <title>Westagram_main</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="wrapper">
+        <div class="leftContent">
+          <ul class="navFlexItems">
+            <li>
+              <a href=""><img src="../img/logo_img.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../img/logo_text.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="middleContent">
+          <input type="text" />
+          <div class="placeholder"><i class="xi-search"></i>검색</div>
+          <div class="searchBox">
+            <ul class="searchList"></ul>
+          </div>
+        </div>
+        <div class="rightContent">
+          <ul class="navFlexItems">
+            <li>
+              <a href="">
+                <img src="../img/explore.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../img/heart.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="../html/login.html">
+                <img src="../img/profile.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="imgBox">
+                  <img src="../img/insta_profile.jpg" alt="" />
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="profileBox">
+            <ul>
+              <li class="profile">
+                <a href="#">
+                  <img src="../img/profile.png" alt="" />
+                </a>
+              </li>
+              <li class="bookmark">
+                <a href="#">
+                  <img src="../img/bookmark.png" alt="" />
+                </a>
+              </li>
+              <li class="logout">
+                <a href="">로그아웃</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="wrapper">
+        <div class="feeds">
+          <article>
+            <div class="profile_top">
+              <div class="profileImgBox">
+                <a href="#"
+                  ><img class="img100per" src="../img/insta_profile.jpg" alt=""
+                /></a>
+              </div>
+              <a href=""><span class="name">every_moment</span></a>
+              <div class="more">
+                <a href=""><img src="../img/more.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="feedImgBox">
+              <img class="img100per" src="../img/insta_feed1.jpg" alt="" />
+            </div>
+            <div class="profile_bottom">
+              <div class="icons">
+                <ul>
+                  <li>
+                    <img src="../img/heart.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="../img/comment.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="../img/share.png" alt="" />
+                  </li>
+                  <li>
+                    <a href=""><img src="../img/bookmark.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="likeCount">좋아요 3개</div>
+              <div class="feedContext">
+                <div class="feed">
+                  <a class="name" href="">every_moment</a>
+                  <p>아무것도 하고싶지 않아..</p>
+                  <button class="moreBtn">더 보기</button>
+                </div>
+                <div class="comments">
+                  <ul class="commentList"></ul>
+                </div>
+                <span class="timeAgo">30분 전</span>
+              </div>
+              <div class="commentInput">
+                <input type="text" placeholder="댓글달기..." />
+                <button class="replyBtn">게시</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="main-right">
+          <div class="profile">
+            <div class="top">
+              <div class="imgBox">
+                <a href=""
+                  ><img class="img100per" src="../img/insta_profile.jpg" alt=""
+                /></a>
+              </div>
+              <div class="textBox">
+                <a href="">
+                  <span>every_moment</span>
+                  <span class="nick">Wanna_go_Home </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content stories">
+            <div class="text">
+              <span>스토리</span>
+              <button>모두 보기</button>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">16분 전</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">4분 전</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">2분 전</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">30분 전</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content recommend">
+            <div class="text">
+              <span>회원님을 위한 추천</span>
+              <button>모두 보기</button>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">Nick</span>
+                  </div>
+                  <button>팔로우</button>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">Nick</span>
+                  </div>
+                  <button>팔로우</button>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">Nick</span>
+                  </div>
+                  <button>팔로우</button>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">Nick</span>
+                  </div>
+                  <button>팔로우</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
