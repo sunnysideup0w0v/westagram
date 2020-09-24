@@ -47,24 +47,80 @@
 #nav .leftContent ul li:nth-child(2) {
   width: 130px;
 }
-#nav .rightContent ul li {
+#nav .rightContent {
+  position: relative;
+}
+#nav .rightContent .navFlexItems li {
   width: 45px;
   height: 45px;
   padding: 10px 0;
 }
-#nav .rightContent ul li:last-child {
+#nav .rightContent .navFlexItems li:last-child {
   width: 30px;
   height: 30px;
   margin-left: 5px;
 }
-#nav .rightContent ul li .imgBox {
+#nav .rightContent .navFlexItems li .imgBox {
   border-radius: 100px;
   overflow: hidden;
 }
-#nav .rightContent ul li .imgBox img {
+#nav .rightContent .navFlexItems li .imgBox img {
   width: 100%;
 }
+#nav .rightContent .profileBox {
+  position: absolute;
+  top: 50px;
+  right: -15px;
+  width: 230px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s ease;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.125);
+}
+#nav .rightContent .profileBox.clicked {
+  opacity: 1;
+  visibility: visible;
+}
 
+#nav .rightContent .profileBox:after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -5px;
+  border-top: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  right: 22px;
+}
+#nav .rightContent .profileBox ul li {
+  padding: 10px 15px;
+  text-align: left;
+}
+#nav .rightContent .profileBox ul li a {
+  position: relative;
+}
+#nav .rightContent .profileBox ul li a svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#nav .rightContent .profileBox ul li span {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 1.4rem;
+}
+#nav .rightContent .profileBox ul li:last-child {
+  border-top: 1px solid #d9d9d9;
+}
+#nav .rightContent .profileBox ul li:last-child span {
+  margin: 0;
+}
 #nav .middleContent {
   position: relative;
 }
@@ -98,7 +154,6 @@
   border: 1px solid #d9d9d9;
   opacity: 0;
   visibility: hidden;
-  /* display: none; */
   transition: 0.25s ease;
 }
 #nav .middleContent .searchBox:after {
@@ -165,13 +220,14 @@
   overflow: hidden;
 }
 #main .feeds {
-  width: 614px;
+  width: 70%;
   float: left;
   padding-top: 30px;
 }
 #main article {
   margin-bottom: 60px;
   border: 1px solid #d9d9d9;
+  background-color: #fff;
 }
 #main article .profile_top {
   display: flex;
@@ -346,6 +402,7 @@
   border: 1px solid #d9d9d9;
   border-radius: 5px;
   margin-bottom: 15px;
+  background-color: #fff;
 }
 #main .main-right .content .text {
   display: flex;
